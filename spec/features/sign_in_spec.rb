@@ -21,7 +21,7 @@ describe "Sign In" do
     current_path.should == "/"
   end
 
-  it "should show validation erros" do
+  it "should show validation errors" do
     fill_in "Email", :with => @user.email
     fill_in "Password", :with => "wrong_password"
     click_button "Login"

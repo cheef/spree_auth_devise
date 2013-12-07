@@ -27,7 +27,7 @@ class Spree::UserSessionsController < Devise::SessionsController
         }
       end
     else
-      flash.now[:error] = t('devise.failure.invalid')
+      flash.now[:alert] = t('devise.failure.invalid')
       render :new
     end
   end
